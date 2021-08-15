@@ -14,7 +14,7 @@ from tqdm import tqdm
 if __name__ == '__main__':
 
     # insert data from csv file into dataframe.
-    df = pd.read_csv("department.csv")
+    df = pd.read_csv("department_pipe_line.csv", sep='|')
     # Some other example server values are
     # server = 'localhost\sqlexpress' # for a named instance
     # server = 'myserver,port' # to specify an alternate port
