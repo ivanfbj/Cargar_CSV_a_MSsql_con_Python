@@ -4,21 +4,6 @@ from tqdm import tqdm
 import time
 import os
 
-# # Sentencias para crear las tablas directamente en Microsoft SQL Server y poder llevar a cabo la ejecución del código
-# CREATE TABLE [dbo].[DepartmentTest](
-# 	[DepartmentID] [int] NOT NULL,
-# 	[Name] [nvarchar](100) NOT NULL,
-# 	[GroupName] [nvarchar](100) NOT NULL
-# ) ON [PRIMARY]
-# GO
-
-# CREATE TABLE [dbo].[DepartmentTest_bulkInsert](
-# 	[DepartmentID] [int] NOT NULL,
-# 	[Name] [nvarchar](100) NOT NULL,
-# 	[GroupName] [nvarchar](100) NOT NULL
-# ) ON [PRIMARY]
-# GO
-
 if __name__ == '__main__':
 
     # Se declaran las variables para almacenar el nombre del archivo que se va a utilizar y el ruta completa donde se encuentra almacenado
@@ -34,8 +19,8 @@ if __name__ == '__main__':
     # server_name = 'myserver,port' # to specify an alternate port
     driver_name = 'SQL Server'
     server_name = 'AGN5\SQLEXPRESS'  # select @@SERVERNAME
-    database_name = 'Test_Local'
-    user_name = 'usertest'
+    database_name = 'TESTING_PYTHON'
+    user_name = 'pythonSql'
     password = '123456789'
 
     # Se estable la conexión a la base de datos con sus respectivo valores anteriormente declarados
